@@ -9,7 +9,10 @@ body {
   border-width: 100px 100vw 0 0;
   border-color: black transparent transparent transparent;
   position: relative;
-  z-index: 10;
+
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .separator-bottom {
   width: 0;
@@ -27,15 +30,21 @@ body {
   min-height: 30vw;
   height: 40vw;
   overflow: hidden;
-  margin: -100px 0;
+  padding-top: 100px;
+  margin-bottom: -200px;
   position: relative;
   z-index: 13;
 }
-.team.show {
-  
+.team-full .separator-top {
+  z-index: -1;
+}
+.team-details .separator-top {
+  z-index: 10;
 }
 .team-full {
   position: relative;
+      margin-top: -100px;
+    z-index: 12;
 }
 
 .kid {
@@ -52,7 +61,7 @@ body {
 .kid_bg {
   content: '';
   position: absolute;
-  top:0;
+  top:-100px;
   bottom:0;
   right:0;
   left:0;
@@ -96,6 +105,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 100px;
   
   opacity: 0;
   visibility: hidden;
@@ -150,7 +160,7 @@ body {
   position: absolute;
   transition: transform 1s;
   background: #fff;
-  z-index: 999;
+  z-index: 9;
   transform: scale(0) translateZ(0);
 }
 .circle.show {
@@ -171,5 +181,5 @@ body {
   background: #000;
   height: 100px;
   position: relative;
-  z-index: 5;
+  z-index: 20;
 }
