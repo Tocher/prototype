@@ -20,11 +20,11 @@ $('.close').click(function() {
   $('.team').removeClass('show');
 });
 
-var kidBg = $('.kid_bg');
-$('.kid').mouseover(function() {
-	kidBg.addClass('show');
-});
+// var kidBg = $('.kid_bg');
+// $('.kid').mouseover(function() {
+// 	kidBg.addClass('show');
+// });
 
-$('.kid').mouseout(function() {
-	kidBg.removeClass('show');
-});
+// $('.kid').mouseout(function() {
+// 	kidBg.removeClass('show');
+// });

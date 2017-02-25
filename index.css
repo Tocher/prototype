@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 .separator-top {
   width: 0;
@@ -57,6 +58,7 @@ body {
   margin: 0 -6vw;
   background-position: center bottom;
   position: relative;
+  transition: margin .3s;
 }
 .kid_bg {
   content: '';
@@ -76,7 +78,9 @@ body {
   visibility: visible;
 }
 .kid:hover {
-  z-index: 7;
+  /*z-index: 7;*/
+  margin: 0;
+  cursor: pointer;
 }
 .kid1 {
   background-image: url('1.png');
@@ -131,13 +135,17 @@ body {
 
 .text {
   text-align: left;
-  transform: translateX(20%);
-  transition: transform .3s;
   width: 400px;
-  height: 100%;
+  height: 50%;
+  transform: translateX(20%);
+  transition: transform .7s;
   background-position: center right;
   background-repeat: no-repeat;
   background-size: 100%;
+}
+.right {
+  width: 400px;
+  height: 100%;
 }
 .avatar {
   width: 500px;
@@ -146,9 +154,13 @@ body {
   background-size: contain;
   background-position: bottom center;
   transform: translateX(-20%);
-  transition: transform .3s;
+  transition: transform .7s;
   position: relative;
   z-index: 5;
+}
+.description {
+  font-size: 16px;
+  text-align: left;
 }
 
 .circle {
@@ -158,7 +170,7 @@ body {
   margin-top: -5vw;
   margin-left: -5vw;
   position: absolute;
-  transition: transform 1s;
+  transition: transform 1s ease;
   background: #fff;
   z-index: 9;
   transform: scale(0) translateZ(0);
