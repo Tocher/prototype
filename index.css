@@ -49,13 +49,16 @@ body {
 }
 
 .kid {
+  display: inline-block;
+  position: relative;
+}
+.kid > div {
   min-height: 30vw;
   height: 40vw;
   width: 25vw;
-  display: inline-block;
   background-repeat: no-repeat;
   background-size: contain;
-  margin: 0 -6vw;
+  margin: 0 -5vw;
   background-position: center bottom;
   position: relative;
   transition: margin .3s;
@@ -169,13 +172,15 @@ body {
   margin-top: -5vw;
   margin-left: -5vw;
   position: absolute;
-  transition: transform 1s ease;
+  transition: transform .7s ease, opacity .7s;
   background: #fff;
   z-index: 9;
   transform: scale(0) translateZ(0);
+  opacity: 0;
 }
 .circle.show {
   transform: scale(20) translateZ(0);
+  opacity: 1;
 }
 
 .close {
