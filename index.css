@@ -78,8 +78,7 @@ body {
   visibility: visible;
 }
 .kid:hover {
-  /*z-index: 7;*/
-  margin: 0;
+  z-index: 7;
   cursor: pointer;
 }
 .kid1 {
@@ -135,8 +134,8 @@ body {
 
 .text {
   text-align: left;
-  width: 400px;
-  height: 50%;
+  width: 250px;
+  height: 40%;
   transform: translateX(20%);
   transition: transform .7s;
   background-position: center right;
