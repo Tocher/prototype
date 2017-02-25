@@ -137,7 +137,7 @@ body {
 
 .text {
   text-align: left;
-  width: 250px;
+  width: 20vw;
   height: 40%;
   transform: translateX(20%);
   transition: transform .7s;
@@ -150,7 +150,8 @@ body {
   height: 100%;
 }
 .avatar {
-  width: 500px;
+  min-width: 500px;
+  width: 25vw;
   height: 100%;
   background-repeat: no-repeat;
   background-size: contain;
