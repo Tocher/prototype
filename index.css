@@ -30,12 +30,15 @@ body {
 .team {
   text-align: center;
   min-height: 30vw;
-  height: 40vw;
+  height: 35vw;
   overflow: hidden;
   padding-top: 100px;
   margin-bottom: -200px;
   position: relative;
   z-index: 13;
+  background: url('background_rez.jpg') no-repeat;
+  background-size: 100%;
+  background-position: center -8vh;
 }
 .team-full .separator-top {
   z-index: -1;
@@ -55,11 +58,11 @@ body {
 }
 .kid > div {
   min-height: 30vw;
-  height: 40vw;
-  width: 25vw;
+  height: 35vw;
+  width: 20vw;
   background-repeat: no-repeat;
   background-size: contain;
-  margin: 0 -5vw;
+  margin: 0 -3.5vw;
   background-position: center bottom;
   position: relative;
   transition: margin .3s;
@@ -113,6 +116,10 @@ body {
   justify-content: center;
   align-items: center;
   padding-bottom: 100px;
+
+  background: url('background_rez.jpg') no-repeat;
+  background-size: 100%;
+  background-position: center -8vh;
   
   opacity: 0;
   visibility: hidden;
@@ -128,6 +135,9 @@ body {
 .team-details.show .text {
   transform: translateX(0);
 }
+.team-details.show .description {
+  transform: translateX(0);
+}
 
 .team-details .separator-top {
   position: absolute;
@@ -140,7 +150,7 @@ body {
   text-align: left;
   width: 20vw;
   height: 40%;
-  transform: translateX(20%);
+  transform: translateX(30%);
   transition: transform .7s;
   background-position: center right;
   background-repeat: no-repeat;
@@ -157,7 +167,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom center;
-  transform: translateX(-20%);
+  transform: translateX(-30%);
   transition: transform .7s;
   position: relative;
   z-index: 5;
@@ -165,6 +175,8 @@ body {
 .description {
   font-size: 1em;
   text-align: left;
+  transform: translateX(30%);
+  transition: transform .7s;
 }
 @media only screen and (min-width:1600px){
     body {

@@ -11,7 +11,7 @@ $('.kid').click(function(e) {
 
   var avatarUrl = $(this).data('avatar') || '1';
   $('.avatar').css('background-image', 'url(' + avatarUrl + '_pic.png)');
-  $('.text').css('background-image', 'url(' + avatarUrl + '_text.jpg)');
+  $('.text').css('background-image', 'url(' + avatarUrl + '_text.png)');
 });
 
 $('.close').click(function() {
